@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="sq">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Website-i im i parë online!</title>
+		<style>
+			body {
+			font-family: Arial, sans-serif;
+			background: linear-gradient(135deg, #74b9ff, #a29bfe);
+			color: #333;
+			text-align: center;
+			padding-top: 100px;
+			margin: 0;
+			}
+			.container {
+			background: white;
+			padding: 40px;
+			border-radius: 12px;
+			display: inline-block;
+			box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+			}
+			button {
+			background-color: #0984e3;
+			color: white;
+			border: none;
+			padding: 10px 20px;
+			font-size: 16px;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 20px;
+			}
+			button:hover {
+			background-color: #74b9ff;
+			}
+			#mesazhi {
+			margin-top: 15px;
+			font-weight: bold;
+			color: #2d3436;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="container">
+			<h1>Mirë se erdhët në faqen time!</h1>
+			<p>Ky është projekti im i parë web përmes HTML, CSS dhe JavaScript.</p>
+
+			<button onclick="shfaqMesazhin()">Kliko këtu</button>
+			<p id="mesazhi"></p>
+		</div>
+
+		<script>
+			function shfaqMesazhin() {
+			document.getElementById("mesazhi").innerText = "Urime! E kaluat me sukses hapin e parë të programimit! 🚀";
+			}
+		</script>
+
+	</body>
+</html>
